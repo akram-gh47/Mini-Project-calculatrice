@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculatrice">
+
+        <input readonly id="affichage">
+        <div id="operators">
+          <input type="button" value="+" name="plus" onclick="appendValue('+')">
+          <input type="button" value="-" name="moin" onclick="appendValue('-')">
+          <input type="button" value="x" name "multi" onclick="appendValue('*')">
+          <input type="button" value="/" name="division" onclick="appendValue('/')">
+          <input type="button" value="." name="point" onclick="appendValue('.')">
+          
+        </div>
+        <div id="numbers">
+           <input type="button" value="1" name="nbr1" onclick="appendValue('1')">
+           <input type="button" value="2" name="nbr2" onclick="appendValue('2')">
+           <input type="button" value="3" name="nbr3" onclick="appendValue('3')">
+           <input type="button" value="4" name="nbr4" onclick="appendValue('4')">
+           <input type="button" value="5" name="nbr5" onclick="appendValue('5')">
+           <input type="button" value="6" name="nbr6" onclick="appendValue('6')">
+           <input type="button" value="7" name="nbr7" onclick="appendValue('7')">
+           <input type="button" value="8" name="nbr8" onclick="appendValue('8')">
+           <input type="button" value="9" name="nbr9" onclick="appendValue('9')">
+
+        </div>
+        <input type="button" id="reset" value="C" onclick="clearDisplay()">
+        <input type="button" id="egal" value="=" onclick="calculate()">
+    </div>
+</body>
+</html>
